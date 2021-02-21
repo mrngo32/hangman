@@ -17,7 +17,7 @@ TITLE_FONT = pygame.font.SysFont('comicsans', 72)
 # Load images
 images = []
 for i in range(7):
-    image = pygame.image.load(r"C:\Users\Steven\Desktop\python_work\hangman\images\hangman" 
+    image = pygame.image.load(r"images\hangman" 
     + str(i) + ".png")
     images.append(image)
 
@@ -118,7 +118,7 @@ while run:
         break
     
     if hangman_status == 6:
-        display_message("UH OH, YOU LOST!" + word)
+        display_message("UH OH, YOU LOST! It was: " + word)
         break
 
 pygame.quit()
